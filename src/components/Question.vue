@@ -10,15 +10,18 @@ import axios from 'axios'
 export default {
     name: 'Question',
     data: () => ({
-        fetchedQuestion: null
+        fetchedQuestion: [],
+        
     }),
     mounted() {                 //application is mounted
         axios                   //axios fetch data from 
             .get('https://opentdb.com/api.php?amount=10&category=26&difficulty=easy') //endpoint for api
             .then(response => this.fetchedQuestion = response.data)  //initilise the data to data
+    },
+    methods: {
+
     }
 }
-
 
 
 
@@ -29,4 +32,4 @@ export default {
   li{
     margin-bottom: 1rem;
   }
-</style> 
+</style>

@@ -2,6 +2,7 @@
   <div class="start-page">
       <h1 id="start-page-title">Welcome to Trivia Game</h1>
     <router-link id="play-button" to="/Question">Play now!</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
