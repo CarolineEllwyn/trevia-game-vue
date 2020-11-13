@@ -1,6 +1,6 @@
 <template>
   <div class="start-page">
-      <h1 id="start-page-title">Welcome to Trivia Game</h1>
+      <h1 id="start-page-title">Trivia Game</h1>
     <router-link id="play-button" to="/Question">Play now!</router-link>
     <router-view></router-view>
   </div>
@@ -31,6 +31,9 @@ body {
     font-size: 30px;
     border-radius: 10px;
     padding: 5px;
+    text-decoration: none;
+    border: 3px white solid;
+    transition: ease-in-out .3s;
 }
 #play-button:hover {
 cursor: pointer;
